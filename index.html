@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600&family=Shippori+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="Ads_container">
+      EXTRA 5% INSTANT DISCOUNT FOR ALL ONLINE PAYMENTS. FREE DELIVERY. FREE
+      RETURNS.
+    </div>
+
+    <div class="nav_info">
+      <div class="left">
+        <div class="logo d-flex align-items-center justify-content-center">
+          <img src="data:image/png;base64,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" alt="logo image">
+        </div>
+        <div class="nav_links">
+          <ul>
+            <li><a href="index.html">Women</a></li>
+            <li><a href="index.html">Men</a></li>
+            <li><a href="index.html">Kids</a></li>
+            <li><a href="index.html">Collaborations</a></li>
+            <li><a href="index.html">Sport</a></li>
+            <li><a href="index.html">Outlet</a></li>
+          </ul>
+        </div>
+        <div class="mobo_links">
+          <ul>
+            <li><a href="index.html">Women</a></li>
+            <li><a href="index.html">Men</a></li>
+            <li><a href="index.html">Kids</a></li>
+            <li><a href="index.html">Beauty</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right_part">
+        <div class="search_bar">
+          <span><i class="fas fa-search"></i></span>
+          <input type="text" id="search_box" placeholder="Search here....">
+        </div>
+        <div class="desktop_actions">
+          <div class="wishlist_section desktop_view">
+            <div class="icon wishlist_icon">
+              <a href="index.html"><i class="far fa-heart"></i></a>
+              <span><h5 id="wishlist_items">0</h5></span>
+            </div>
+
+          </div>
+          <div class="bag_section desktop_view">
+            <div class="icon bag_icon">
+              <a href="index.html"><i class="fas fa-shopping-bag"></i></a>
+              <span><h5 id="bag_items">0</h5></span>
+            </div>
+   
+          </div>
+          <div class="profile_section desktop_view">
+            <div class="icon user_icon">
+              <a><i class="fas fa-user-plus"></i></a>
+            </div>
+
+          </div>
+
+          <div class="profile_info">
+            <div class="profile_links">
+              <h6 class="text-dark m-3">QUICKLINKS</h6>
+              <ul>
+                <li><a href="index.html">My Account</a></li>
+
+                <li><a href="index.html">Whishlist</a></li>
+                <li><a href="index.html">Check Order</a></li>
+
+                <li><a href="">Store Finder</a></li>
+                <li><a href="">Logout</a></li>
+              </ul>
+              <hr>
+              <a href="index.html"><button>Login</button></a>
+              <p class="text-dark m-3">
+                <span>Not Account yet ? <a href="index.html">REGISTER HERE</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="banner">
+      <div class="banner">
+        <img
+          src="png.jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <div class="banner_content">
+        <h1>EXTRA 10% OFF</h1>
+        <h3>ON ALL WOMEN STYLES</h3>
+        <h3>A WEEKEND FOR WOMEN </h3>
+     <pre>
+      
+  Use code: <b>WOMEN10</b> 
+  4th-6thNov</pre>
+        
+        <div class="btn_cont">
+
+          <a href=""><button>SHOP NOW</button></a>
+          
+        </div>
+      </div>
+    </section>
+    
+      <div class="banner_contents">
+        <P class="text-center">FITS YOU CAN'T MISS</P>     
+      </div>
+      
+    </div>
+    <div class="img_overscale">
+      <img
+        src="png2.jpg"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content">
+        <h1>FOREVER FAVOURITE</h1>
+        <p>Look stellar in our bestsellers</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP WOMEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+        <hr>
+        <div class="grid">
+          <img src="png3.jpg" alt="" width="100%">
+        </div>
+        
+    <div class="img_overscale">
+      <img
+        src="png8.jpg"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content new">
+        <h1>DON'T SWEAT IT</h1>
+        <p>New one8 Collection | Now Live</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="img_overscale">
+      <img
+        src="https://images.puma.com/image/upload/f_auto,fl_lossy,q_60,w_1440/regional/~regional~IND~others~KOP~JAN+2022~Bestsellers-desktop.gif/fmt/gif/fmt/gif"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content">
+        <h1>FOREVER FAVOURITE</h1>
+        <p>Look stellar in our bestsellers</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP WOMEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="img_overscale">
+      <img
+        src="png9.JPG"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content">
+        <h1>PUMA ACCESSORIES</h1>
+        <p class="text-dark">GRAB YOUR FAVOURITES</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP WOMEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="img_overscale">
+      <img
+        src="png10.JPG"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content winter">
+        <h1>SWEATER WEATHER</h1>
+        <p class="text-dark">Winter Ready Styles</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP WOMEN</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="img_overscale">
+      <img
+        src="png11.jpg"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content">
+        <h1>PUMA ACCESSORIES</h1>
+        <p class="text-dark">GRAB YOUR FAVOURITES</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP WOMEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="img_overscale">
+      <img
+        src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~DEC+2021~one8-desktop.jpg/fmt/jpg/fmt/png"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+      <div class="banner_content new">
+        <h1>DON'T SWEAT IT</h1>
+        <p>New one8 Collection | Now Live</p>
+        <div class="btn_cont">
+          <a href=""><button>SHOP MEN</button></a>
+          <a href=""><button>SHOP KIDS</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading mt-5">
+      <h2 class="text-center">AS WORN BY PUMA FAM</h2>
+      <p class="text-center text-dark">Click to shop & mention us on instagram @pumaindia to be featured</p>
+    </div>
+
+    <div class="slider_container">
+      <div class="slider" id="item1" style="display: inline-block;">
+        <img src="12.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">Ferrari Race X-Ray 2 Sneakers</p>
+        </div>
+      </div>
+      <div class="slider" id="item2" style="display: inline-block;">
+        <img src="13.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">Modern Runner Unisex Sneakers</p>
+        </div>
+      </div>
+      <div class="slider" id="item3" style="display: inline-block;">
+        <img src="14.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">Mercedes AMG Petronas F1 Drift Cat Delta Sneakers</p>
+        </div>
+      </div>
+      <div class="slider" id="item4" style="display: inline-block;">
+        <img src="15.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">Wired Cage Sneakers</p>
+        </div>
+      </div>
+      <div class="slider" id="item5" style="display: none;">
+        <img src="16.jpg" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">GOAL FOR THE KING</p>
+        </div>
+      </div>
+      <div class="slider" id="item6" style="display: none;">
+        <img src="17.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">GOAL FOR THE KING</p>
+        </div>
+      </div>
+      <div class="slider" id="item7" style="display: none;">
+        <img src="18.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">GOAL FOR THE KING</p>
+        </div>
+      </div>
+      <div class="slider" id="item8" style="display: none;">
+        <img src="19.JPG" alt="" class="img-fluid">
+        <div class="content">
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="text-dark">@pumaindia</p>
+          <p class="text-dark">GOAL FOR THE KING</p>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="indicater">
+        <div class="left_indicater circle">
+          <i class="fas fa-chevron-circle-left"></i>
+        </div>
+        <div class="right_indicater circle">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading2 mt-5">
+      <h2>PUMA – CLOTHING, SHOES & ACCESSORIES</h2>
+      <p class="text-dark">
+        Welcome to PUMA – the Fastest Sports Brand in the World. Shop for Men,
+        Women and Kids Clothing, Shoes & Accessories. Get the Edge in Style &
+        Comfort Now.
+      </p>
+    </div>
+
+    <section id="footer">
+      <section id="footer"> <div class="footer_info">
+        <div class="left">
+          <div class="left_1">
+            <h2>Support</h2>
+            <div class="footer_links">
+              <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Promotions &amp; Sale</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Track Order</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Return Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms &amp; consitions</a></li>
+                <li><a href="">Initiate Return</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="left_2">
+            <h2>About PUMA</h2>
+            <div class="footer_links">
+              <ul>
+                <li><a href="">Company</a></li>
+                <li><a href="">Corporate News</a></li>
+                <li><a href="">Press Center</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Store Finder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h2>More Inspiration</h2>
+          <div class="social_icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <hr>
+          <div class="company d-flex">
+            <div class="company_logo">
+              <img src="https://in.puma.com/on/demandware.static/-/Sites-IN-Library/default/dwe13dbf96/web-components/pumatrac-logo.svg" alt="">
+            </div>
+            <div class="info">
+              <p>TRAIN WITH THE FASTEST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr_line">
+        <hr>
+
+        <div class="about_company d-flex">
+          <select name="country" id="country">
+            <option value="india">INDIA</option>
+            <option value="US">US</option>
+            <option value="Afghanistan">AFGHANISTHAN</option>
+            <option value="Albania">ALBANIA</option>
+          </select>
+          <p class="small p-0 m-0">© PUMA SE, 2021. All Rights Reserved</p>
+          <p class="small p-0 m-0">Imprint &amp; Legal Data</p>
+        </div>
+      </div></section>
+    </section>
+  </body>
+
+  
+</html>
