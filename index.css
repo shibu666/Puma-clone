@@ -26,7 +26,6 @@ body {
     position: sticky;
     top: 0px;
     z-index: 300;
-    /* border-bottom: 1px solid rgb(214, 208, 208); */
     height: 5rem;
     box-shadow: rgb(0 0 0 / 45%) 0px 4px 49px -25px;
     transition: height 0.4s ease-in;
@@ -333,7 +332,7 @@ body {
     left: 4%;
   }
   .img_overscale h1 {
-    color: black;
+    color:white;
     font-weight: bold;
   }
   .img_overscale .banner_content.new {
